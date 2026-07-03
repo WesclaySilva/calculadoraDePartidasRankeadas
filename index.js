@@ -1,5 +1,5 @@
 
-let vitorias = 20;
+let vitorias = 70;
 let derrotas = 10;   
 let resultadoVitorias = saldoVitorias(vitorias, derrotas); 
 let resultadoNivel = nivelHeroi(resultadoVitorias);
