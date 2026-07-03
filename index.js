@@ -1,21 +1,21 @@
 
-let vitorias = 200;
+let vitorias = 20;
 let derrotas = 10;   
-let resultadoNivel = nivelHeroi(saldoVitorias(vitorias, derrotas)); 
-let resultadoVitorias = saldoVitorias(vitorias, derrotas);
-console.log("O herói tem saldo de " + resultadoVitorias + " vitórias e está no nível " + resultadoNivel);
+let resultadoVitorias = saldoVitorias(vitorias, derrotas); 
+let resultadoNivel = nivelHeroi(resultadoVitorias);
+
+console.log(`O herói tem saldo de ${resultadoVitorias} vitórias e está no nível ${resultadoNivel}!`);
 
 function saldoVitorias(vitorias, derrotas) {
     let saldo = vitorias - derrotas;
     return saldo;
 }
 
-
 function nivelHeroi(saldo) {
     
     let nivel;
 
-    if (saldo < 10) {
+    if (saldo <= 10) {
         nivel = 'Ferro';
     } else if (saldo < 21) {         
         nivel = 'Bronze';
